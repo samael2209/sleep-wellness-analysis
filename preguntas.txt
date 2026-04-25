@@ -1,0 +1,56 @@
+1 · Descripción
+¿Cómo es el dataset?
+01
+¿Cuántas horas duermen en promedio? ¿Y el mínimo y máximo?
+sleep_hours → describe()
+02
+¿Qué plataforma de redes sociales es la más popular?
+platform_usage → value_counts() + barplot
+03
+¿Cómo se distribuyen los niveles de estrés y ansiedad?
+stress_level, anxiety_level → histogramas
+04
+¿Cuántas personas tienen alto, medio y bajo riesgo de depresión?
+depression_risk → value_counts()
+
+2 · Comparación
+¿Hay diferencias entre grupos?
+05
+¿Los usuarios de TikTok duermen menos que los de YouTube o Instagram?
+platform_usage vs sleep_hours → groupby + boxplot
+06
+¿Hay diferencia en el nivel de estrés entre hombres y mujeres?
+gender vs stress_level → groupby + boxplot
+07
+¿Quienes tienen más interacción social tienen mejor rendimiento académico?
+social_interaction_level vs academic_performance → groupby
+08
+¿Las personas con alto riesgo de depresión hacen menos actividad física?
+depression_risk vs physical_activity → groupby + boxplot
+
+3 · Correlación
+¿Qué variables se relacionan?
+09
+¿Más pantalla antes de dormir significa menos horas de sueño?
+screen_time_before_sleep vs sleep_hours → scatter + corr()
+10
+¿A más horas en redes sociales, peor rendimiento académico?
+daily_social_media_hours vs academic_performance → scatter + regplot
+11
+¿Cuáles son las variables numéricas más correlacionadas entre sí?
+Todas numéricas → heatmap de correlación
+12
+¿Más actividad física implica menos ansiedad?
+physical_activity vs anxiety_level → scatter + corr()
+4 · Predicción
+¿Qué predice qué?
+13
+¿Qué variables predicen mejor el riesgo de depresión?
+Todas → depression_risk · RandomForest + feature importance
+14
+¿Se puede predecir el nivel de estrés a partir del estilo de vida?
+sleep_hours, daily_social_media_hours, physical_activity → stress_level · regresión
+15
+¿Qué perfil de usuario tiene más riesgo de depresión?
+gender, platform_usage, social_interaction_level → depression_risk · análisis de perfiles
+Haz clic en cualquier pregunta para ver el código Python directamente ↗
